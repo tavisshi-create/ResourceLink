@@ -1,0 +1,24 @@
+{
+  "name": "resourcelink-backend",
+  "version": "1.0.0",
+  "description": "Backend and x402 Algorand micropayment settlement engine for ResourceLink",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@algorandfoundation/algokit-utils": "^10.0.0-alpha.39",
+    "@supabase/supabase-js": "^2.116.0",
+    "@x402-avm/avm": "^2.6.1",
+    "@x402-avm/core": "^2.6.1",
+    "@x402-avm/express": "^2.6.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
