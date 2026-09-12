@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from supabase_client import supabase
 from matcher import match_resources
@@ -8,6 +9,14 @@ app = FastAPI(
     title="ResourceLink AI Matching API",
     description="Matches institutional resource requests with available resources",
     version="1.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # for hackathon; tighten to your actual frontend URL later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
