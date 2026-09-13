@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ProviderDashboard } from './ProviderDashboard';
-import ReceiverMain from '../receiver/Main';
+import ReceiverApp from '../receiver/ReceiverApp';
 
 export function MainApp() {
   const [mode, setMode] = useState<'provider' | 'renter'>('provider');
@@ -16,7 +16,7 @@ export function MainApp() {
             Return to Provider Mode
           </button>
         </div>
-        <ReceiverMain />
+        <ReceiverApp />
       </div>
     );
   }

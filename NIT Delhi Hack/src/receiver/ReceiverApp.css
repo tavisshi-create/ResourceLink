@@ -1,0 +1,40 @@
+.receiver-app {
+    width: 100%;
+}
+
+.receiver-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 6px;
+    padding: 12px clamp(12px, 2.5vw, 24px) 0;
+    background: #f7f8fa;
+}
+
+.receiver-tab {
+    height: 38px;
+    padding: 0 16px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    background: white;
+    color: #555;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.receiver-tab:hover {
+    border-color: #bbb;
+}
+
+.receiver-tab-active {
+    background: #171717;
+    border-color: #171717;
+    color: white;
+}
+
+.receiver-tab-hidden {
+    display: none;
+}
